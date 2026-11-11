@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Magic Board Games Studio - toko board game bertema sihir dan teknologi canggih.">
+  <title>Magic Board Games Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <header class="navbar" id="navbar">
+    <a href="#beranda" class="logo">✦ Magic<span>Board</span> Studio</a>
+    <nav id="navMenu">
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#visi-misi">Visi &amp; Misi</a>
+      <a href="#produk">Produk</a>
+    </nav>
+    <div class="actions">
+      <button class="cart-btn" id="cartBtn" aria-label="Buka keranjang">🛒 <span class="badge" id="cartCount">0</span></button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="beranda">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Sihir bertemu Teknologi</p>
+        <h1>Magic Board Games <em>Studio</em></h1>
+        <p class="hero-text">Tempat para penyihir modern berkumpul. Temukan board game dengan mekanika arkana, komponen berteknologi tinggi, dan petualangan tanpa batas.</p>
+        <div class="hero-buttons">
+          <a href="#produk" class="btn btn-primary">Jelajahi Koleksi</a>
+          <a href="#tentang" class="btn btn-ghost">Kenali Kami</a>
+        </div>
+      </div>
+      <div class="orb" aria-hidden="true"><div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div><span>🔮</span></div>
+    </section>
+
+    <!-- TENTANG -->
+    <section class="section" id="tentang">
+      <h2 class="section-title reveal">Tentang Kami</h2>
+      <div class="about-grid">
+        <div class="reveal">
+          <p><strong>Magic Board Games Studio</strong> adalah tempat toko dan studio board game yang memadukan dunia sihir kuno dengan teknologi masa depan. Kami percaya permainan terbaik lahir saat imajinasi bertemu inovasi: papan yang bersinar dengan lampu LED, kartu dengan sentuhan NFC, hingga aplikasi pendamping yang menghidupkan mantra di layar Anda.</p>
+          <p>Setiap produk yang kami jual dipilih dan diuji langsung oleh tim kami. Mulai dari game strategi keluarga, permainan kartu koleksi, sampai board game premium untuk para kolektor, semuanya dikemas dengan sentuhan magis agar setiap sesi bermain terasa seperti petualangan di dunia lain.</p>
+          <p>Kami juga menyediakan layanan custom game, turnamen komunitas, dan ruang bermain untuk berkumpul bersama teman maupun keluarga.</p>
+        </div>
+        <div class="stats reveal">
+          <div class="stat"><b data-count="100">0</b><span>% Game Orisinal</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISI MISI -->
+    <section class="section alt" id="visi-misi">
+      <h2 class="section-title reveal">Visi &amp; Misi</h2>
+      <div class="vm-grid">
+        <article class="card vision reveal">
+          <h3>🌟 Visi</h3>
+          <p>Menjadi pusat board game yang memberikan kesan ajaib dan inovatif di Indonesia, tempat sihir dan teknologi canggih menyatukan orang-orang lewat permainan yang tak terlupakan.</p>
+        </article>
+        <article class="card reveal">
+          <h3>⚔️ Misi</h3>
+          <ul>
+            <li>Menghadirkan board game berkualitas tinggi dengan tema sihir dan teknologi futuristik.</li>
+            <li>Mengembangkan game orisinal yang memadukan komponen fisik dan pengalaman digital interaktif.</li>
+            <li>Membangun komunitas pemain yang ramah, kreatif, dan saling mendukung.</li>
+            <li>Memberikan layanan pelanggan yang hangat, cepat, dan penuh keahlian.</li>
+            <li>Mendorong kebiasaan bermain tatap muka sebagai cara mempererat keluarga dan pertemanan.</li>
+          </ul>
+        </article>
+      </div>
+      <div class="values reveal">
+        <div class="value">✨ Imajinasi</div>
+        <div class="value">⚙️ Inovasi</div>
+        <div class="value">🤝 Kebersamaan</div>
+        <div class="value">🛡️ Kualitas</div>
+      </div>
+    </section>
+
+    <!-- PRODUK -->
+    <section class="section" id="produk">
+      <h2 class="section-title reveal">Koleksi Unggulan</h2>
+      <div class="filters reveal">
+        <button class="filter active" data-filter="semua">Semua</button>
+        <button class="filter" data-filter="klasik">Klasik</button>
+        <button class="filter" data-filter="strategi">Strategi</button>
+        <button class="filter" data-filter="petualangan">Petualangan</button>
+        <button class="filter" data-filter="pesta">Pesta</button>
+      </div>
+      <div class="products" id="products">
+        <article class="product reveal" data-cat="klasik">
+          <div class="thumb">🎩</div>
+          <h3>Monopoly</h3>
+          <p>Permainan klasik jual-beli properti, tanah, dan bangunan untuk membuat lawan bangkrut.</p>
+          <div class="price">Rp 299.000</div>
+          <button class="btn btn-primary add" data-name="Monopoly" data-price="299000">Tambah ke Keranjang</button>
+        </article>
+        <article class="product reveal" data-cat="klasik">
+          <div class="thumb">♟️</div>
+          <h3>Catur (Chess)</h3>
+          <p>Permainan strategi dua orang untuk menyerang dan menskakmat raja lawan.</p>
+          <div class="price">Rp 149.000</div>
+          <button class="btn btn-primary add" data-name="Catur (Chess)" data-price="149000">Tambah ke Keranjang</button>
+        </article>
+        <article class="product reveal" data-cat="klasik">
+          <div class="thumb">🐍</div>
+          <h3>Ular Tangga</h3>
+          <p>Permainan papan berbasis dadu yang klasik dan cocok untuk anak-anak maupun keluarga.</p>
+          <div class="price">Rp 89.000</div>
+          <button class="btn btn-primary add" data-name="Ular Tangga" data-price="89000">Tambah ke Keranjang</button>
+        </article>
+        <article class="product reveal" data-cat="strategi">
+          <div class="thumb">🌾</div>
+          <h3>Catan</h3>
+          <p>Permainan perdagangan, pembangunan pemukiman, dan pengelolaan sumber daya di sebuah pulau.</p>
+          <div class="price">Rp 649.000</div>
+          <button class="btn btn-primary add" data-name="Catan" data-price="649000">Tambah ke Keranjang</button>
+        </article>
+        <article class="product reveal" data-cat="strategi">
+          <div class="thumb">🚂</div>
+          <h3>Ticket to Ride</h3>
+          <p>Permainan menyusun rute jalur kereta api antar kota menggunakan kartu berwarna.</p>
+          <div class="price">Rp 619.000</div>
+          <button class="btn btn-primary add" data-name="Ticket to Ride" data-price="619000">Tambah ke Keranjang</button>
+        </article>
+        <article class="product reveal" data-cat="strategi">
+          <div class="thumb">🗺️</div>
+          <h3>Carcassonne</h3>
+          <p>Permainan menyusun ubin (tile placement) untuk membangun peta berupa kota, biara, dan jalan.</p>
+          <div class="price">Rp 419.000</div>
+          <button class="btn btn-primary add" data-name="Carcassonne" data-price="419000">Tambah ke Keranjang</button>
+        </article>
+        <article class="product reveal" data-cat="strategi">
+          <div class="thumb">💎</div>
+          <h3>Splendor</h3>
+          <p>Permainan mengumpulkan token permata untuk membeli kartu pengembangan dan mendapatkan poin prestise.</p>
+          <div class="price">Rp 459.000</div>
+          <button class="btn btn-primary add" data-name="Splendor" data-price="459000">Tambah ke Keranjang</button>
+        </article>
+        <article class="product reveal" data-cat="klasik">
+          <div class="thumb">🧱</div>
+          <h3>Jenga</h3>
+          <p>Permainan menumpuk balok kayu secara bergantian hingga salah satu pemain merobohkannya.</p>
+          <div class="price">Rp 179.000</div>
+          <button class="btn btn-primary add" data-name="Jenga" data-price="179000">Tambah ke Keranjang</button>
+        </article>
+        <article class="product reveal" data-cat="petualangan">
+          <div class="thumb">⚔️</div>
+          <h3>Gloomhaven</h3>
+          <p>Permainan dungeon crawler taktis dengan elemen petualangan dan cerita yang mendalam.</p>
+          <div class="price">Rp 1.899.000</div>
+          <button class="btn btn-primary add" data-name="Gloomhaven" data-price="1899000">Tambah ke Keranjang</button>
+        </article>
+        <article class="product reveal" data-cat="pesta">
+          <div class="thumb">🕵️</div>
+          <h3>Codenames</h3>
+          <p>Permainan pesta berbasis kata-kata yang dimainkan secara beregu untuk menebak agen rahasia.</p>
+          <div class="price">Rp 289.000</div>
+          <button class="btn btn-primary add" data-name="Codenames" data-price="289000">Tambah ke Keranjang</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Magic Board Games Studio. Dibuat dengan sihir &amp; teknologi ✦</p>
+  </footer>
+
+  <!-- PANEL KERANJANG -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer" aria-hidden="true" aria-label="Keranjang belanja">
+    <div class="drawer-head">
+      <h3>🛒 Keranjang Sihir</h3>
+      <button class="drawer-close" id="drawerClose" aria-label="Tutup keranjang">✕</button>
+    </div>
+    <ul class="cart-items" id="cartItems"></ul>
+    <div class="drawer-foot">
+      <div class="total"><span>Total</span><b id="cartTotal">Rp 0</b></div>
+      <button class="btn btn-ghost" id="clearCart">Kosongkan Keranjang</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+  

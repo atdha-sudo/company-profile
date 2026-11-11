@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Produk - Magic Board Game Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="fade-in">
+
+    <!-- Navigasi -->
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <span class="logo-icon">✨🎲</span>
+                <span class="logo-text">Magic Board Studio</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About & Visi Misi</a></li>
+                <li><a href="products.html" class="active">Produk</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Product Section -->
+    <section class="products-section">
+        <div class="container">
+            <h2>Koleksi Game Board Magis Kami</h2>
+            <p class="subtitle-text">Pilih petualangan strategimu hari ini!</p>
+
+            <div class="product-grid">
+                <!-- Produk 1 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&w=600&q=80" alt="Monopoly">
+                    <div class="product-info">
+                        <h3>Monopoly</h3>
+                        <p>Permainan klasik jual-beli properti, tanah, dan bangunan untuk membuat lawan bangkrut.</p>
+                        <span class="price">Rp 350.000</span>
+                        <button class="btn-buy" onclick="pesanProduk('Monopoly')">Pesan Sekarang</button>
+                    </div>
+                </div>
+
+                <!-- Produk 2 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=600&q=80" alt="Chess">
+                    <div class="product-info">
+                        <h3>Catur (Chess)</h3>
+                        <p>Permainan strategi dua orang untuk merangkap dan menskakmat raja lawan.</p>
+                        <span class="price">Rp 175.000</span>
+                        <button class="btn-buy" onclick="pesanProduk('Catur (Chess)')">Pesan Sekarang</button>
+                    </div>
+                </div>
+
+                <!-- Produk 3 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&w=600&q=80" alt="Snakes and Ladders">
+                    <div class="product-info">
+                        <h3>Ular Tangga</h3>
+                        <p>Permainan papan berbasis dadu yang klasik dan cocok untuk anak-anak maupun keluarga.</p>
+                        <span class="price">Rp 95.000</span>
+                        <button class="btn-buy" onclick="pesanProduk('Ular Tangga')">Pesan Sekarang</button>
+                    </div>
+                </div>
+
+                <!-- Produk 4 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=600&q=80" alt="Catan">
+                    <div class="product-info">
+                        <h3>Catan (The Settlers of Catan)</h3>
+                        <p>Permainan perdagangan, pembangunan pemukiman, dan pengelolaan sumber daya di sebuah pulau.</p>
+                        <span class="price">Rp 650.000</span>
+                        <button class="btn-buy" onclick="pesanProduk('Catan')">Pesan Sekarang</button>
+                    </div>
+                </div>
+
+                <!-- Produk 5 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=600&q=80" alt="Ticket to Ride">
+                    <div class="product-info">
+                        <h3>Ticket to Ride</h3>
+                        <p>Permainan menyusun rute jalur kereta api antar kota menggunakan kartu berwarna.</p>
+                        <span class="price">Rp 580.000</span>
+                        <button class="btn-buy" onclick="pesanProduk('Ticket to Ride')">Pesan Sekarang</button>
+                    </div>
+                </div>
+
+                <!-- Produk 6 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?auto=format&fit=crop&w=600&q=80" alt="Carcassonne">
+                    <div class="product-info">
+                        <h3>Carcassonne</h3>
+                        <p>Permainan menyusun ubin (tile placement) untuk membangun peta kota, biara, dan jalan.</p>
+                        <span class="price">Rp 480.000</span>
+                        <button class="btn-buy" onclick="pesanProduk('Carcassonne')">Pesan Sekarang</button>
+                    </div>
+                </div>
+
+                <!-- Produk 7 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&w=600&q=80" alt="Splendor">
+                    <div class="product-info">
+                        <h3>Splendor</h3>
+                        <p>Permainan mengumpulkan token permata untuk membeli kartu pengembangan & prestise.</p>
+                        <span class="price">Rp 450.000</span>
+                        <button class="btn-buy" onclick="pesanProduk('Splendor')">Pesan Sekarang</button>
+                    </div>
+                </div>
+
+                <!-- Produk 8 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=600&q=80" alt="Jenga">
+                    <div class="product-info">
+                        <h3>Jenga</h3>
+                        <p>Permainan menumpuk balok kayu secara bergantian hingga salah satu pemain merobohkannya.</p>
+                        <span class="price">Rp 120.000</span>
+                        <button class="btn-buy" onclick="pesanProduk('Jenga')">Pesan Sekarang</button>
+                    </div>
+                </div>
+
+                <!-- Produk 9 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1614680376593-902f749f7ffc?auto=format&fit=crop&w=600&q=80" alt="Gloomhaven">
+                    <div class="product-info">
+                        <h3>Gloomhaven</h3>
+                        <p>Permainan dungeon crawler taktis dengan elemen petualangan dan cerita mendalam.</p>
+                        <span class="price">Rp 1.450.000</span>
+                        <button class="btn-buy" onclick="pesanProduk('Gloomhaven')">Pesan Sekarang</button>
+                    </div>
+                </div>
+
+                <!-- Produk 10 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=600&q=80" alt="Codename">
+                    <div class="product-info">
+                        <h3>Codename</h3>
+                        <p>Permainan pesta (party game) berbasis kata-kata yang dimainkan beregu menebak agen.</p>
+                        <span class="price">Rp 310.000</span>
+                        <button class="btn-buy" onclick="pesanProduk('Codename')">Pesan Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Magic Board Game Studio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>images/catur.jpg
